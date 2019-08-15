@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+html, body{
+	text-align: center;
+	background-color: #80FF8E;
+	font-family: 'Josefin Sans', sans-serif;
+	min-width: 320px;
+}
+header{
+	font-family: 'Lobster', cursive;
+}
+.innerform{
+	width: 75%;
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	padding-top: 10px;
+	padding: 10px;
+	margin: 0 auto;
+	max-width: 900px;
+}
+.leftside{
+	display: inline-block;
+	padding: 5px;
+	text-align: right;
+	width: 40%;
+	vertical-align: top;
+	margin-top: 10px;
+}
+.rightside{
+	display: inline-block;
+	text-align: left;
+	width: 48%;
+	vertical-align: middle;
+}
+.input-field{
+	width: 280px;
+	height: 30px;
+	padding: 5px;
+	margin: 10px;
+	border: 1px solid #c0c0c0;
+	border-radius: 10px;
+}
+#dropdown{
+	height: 40px;
+	padding: 5px;
+	margin: 10px;
+	margin-top: 15px;
+	border: 1px solid #c0c0c0;
+}
+.radio{
+	position: relative;
+	left: -43px;
+	display: block;
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+.checkbox{
+	position: relative;
+	left: -43px;
+	display: block;
+	margin-left: : 10px;
+	padding-bottom: 10px;
+}
+.coldWeather,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+#submit{
+	background-color: red;
+	color: white;
+	font-size: 25px;
+	width: 150px;
+	height: 75px;
+	border-radius: 15px;
+	border: 2px solid #000000;
+	margin-top: 10px;
+}
+@media screen and (max-width: 833px;) {
+	.input-field {
+		width: 80%;
+	}
+	select {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 520px) {
+	.leftside {
+		width: 100%;
+		text-align: left;
+	}
+	.rightside {
+		width: 80%;
+		float: left;
+	}
+	.input-field {
+		width: 100%;
+	}
+	select {
+		width: 100%;
+	}
+}

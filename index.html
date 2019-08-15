@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FCC Survey Form Project</title>
+	<link rel="stylesheet" href="gaga.css">
+</head>
+<body>
+	<header>
+		<h1 id="title">Where is your Place of Comfort?</h1>
+	</header>
+		<div class="innerform">
+			<p id="description" style="padding-bottom: 20px;">Which city suits you the best?</p>
+			<form action="" id="survey-form">
+			<div class="row">
+				<div class="leftside">
+					<label for="name" id="name-label">*Name: </label>
+				</div>
+				<div class="rightside">
+					<input type="text" id="name" name ="name" placeholder="Enter your name..." class="input-field" required autofocus>
+				</div>
+			</div>
+			<div class="row">
+				<div class="leftside">
+					<label for="email" id="email-label">*E-Mail: </label>
+				</div>
+				<div class="rightside">
+					<input type="email" id="email" name="email" placeholder="Enter your e-mail..." class="input-field" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="leftside">
+					<label for="age" id="number-label">*Age: </label>
+				</div>
+				<div class="rightside">
+					<input type="number" id="number" name="age" placeholder="Enter your age..." class="input-field" min="1" max="100" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="leftside">
+					<label for="characteristic">Which describes you best?</label>
+				</div>
+				<div class="rightside">
+					<select name="characteristic" id="dropdown" style="border-radius: 10px;" class="dropdown">
+						<option value="selectone" selected disabled>Select One</option>
+						<option value="laidback">Laid Back</option>
+						<option value="active">Active</option>
+						<option value="middle">In the Middle</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="leftside">
+					<label for="coldWeather">How much do you like cold weather?</label>
+				</div>
+				<div class="rightside">
+					<ul style="list-style: none;">
+						<li class="radio"><label>Love It!<input type="radio" class="coldWeather" name="coldWeather" value="1"></label></li>
+						<li class="radio"><label>Meh<input type="radio" class="coldWeather" name="coldWeather" value="2"></label></li>
+						<li class="radio"><label>Hate It!<input type="radio" class="coldWeather" name="coldWeather" value="3"></label></li>
+						</ul>
+					</div>
+				</div>
+			<div class="row">
+				<div class="leftside">
+					<label for="importanceCity">What is most important for you in a city?</label>
+				</div>
+					<div class="rightside">
+						<ul style="list-style: none;">
+							<li class="checkbox"><input type="checkbox" value="1" class="coldWeather" name="importanceCity">Beach</li>
+							<li class="checkbox"><input type="checkbox" value="1" class="coldWeather" name="importanceCity">Laid Back Lifestyle</li>
+							<li class="checkbox"><input type="checkbox" value="1" class="coldWeather" name="importanceCity">Job Prospects</li>
+							<li class="checkbox"><input type="checkbox" value="1" class="coldWeather" name="importanceCity">Money</li>
+							<li class="checkbox"><input type="checkbox" value="1" class="coldWeather" name="importanceCity">Nightlife</li>
+							<li class="checkbox"><input type="checkbox" value="1" class="coldWeather" name="importanceCity">Nature</li>
+							<li class="checkbox"><input type="checkbox" value="1" class="coldWeather" name="importanceCity">Bike Friendly</li>
+							<li class="checkbox"><input type="checkbox" value="1" class="coldWeather" name="importanceCity">Liberal</li>
+							<li class="checkbox"><input type="checkbox" value="1" class="coldWeather" name="importanceCity">Conservative</li>
+							<li class="checkbox"><input type="checkbox" value="1" class="coldWeather" name="importanceCity">Social Activities</li>
+						</ul>
+					</div>
+			</div>
+			<div class="row">
+				<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Please enter any more info which you think would help us in matching you with a city..." style="resize: horizontal;"></textarea>
+			</div>
+			<button type="submit" id="submit">Submit</button>
+		</form>
+		</div>
+</body>
+</html>
